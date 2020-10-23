@@ -18,3 +18,29 @@ body {
 	margin: 0;
 	font-family: 'Lato', sans-serif;
 }
+
+li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #9c88ff;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 1em;
+  margin: 1em 0 auto;
+  padding: .8em 1em;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
