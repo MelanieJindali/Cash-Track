@@ -43,9 +43,10 @@ h4 {
 .inc-exp-container {
   background-color: #fff;
   box-shadow: var(--box-shadow);
-  padding: 1.5em 0 .5em;
+  padding: 1em 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 2em 0;
 }
 
@@ -58,6 +59,21 @@ h4 {
   border-right: 1px solid #dedede;
 }
 
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 1em;
+  padding: .6em;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  margin: 1em 0;
+}
+
 .money {
   font-size: 1.3em;
   letter-spacing: .1em;
@@ -66,17 +82,36 @@ h4 {
 
 .money.plus {
   color: #2ecc71;
+  margin: 0;
 }
 
 .money.minus {
   color: #c0392b;
+  margin: 0;
 }
 
-li.plus {
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2.7em;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: .7em;
+  margin: .7em 0;
+}
+
+.list li.plus {
   border-right: 5px solid #2ecc71;
 }
 
-li.minus {
+.list li.minus {
   border-right: 5px solid #c0392b;
 }
 
@@ -96,4 +131,30 @@ li.minus {
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  padding: .2em .5em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
 }
