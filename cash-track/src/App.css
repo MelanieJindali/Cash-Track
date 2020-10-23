@@ -19,6 +19,59 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+.container {
+  margin: 1em auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: .1em;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 1em;
+  margin: 2em 0 1em;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 1.5em 0 .5em;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 1.3em;
+  letter-spacing: .1em;
+  margin: 1em 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
 li.plus {
   border-right: 5px solid #2ecc71;
 }
